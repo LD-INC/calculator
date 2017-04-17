@@ -1,24 +1,32 @@
 /**
  * Created by DelMonroe on 4/17/17.
  */
-(function () {
+// (function () {
     "use strict";
 
+    var val = [];
     function btn_1() {
-        var val;
+
         var b1 = document.getElementById("I-1");
         b1.setAttribute("value", "1");
-        val = b1.getAttribute("value");
+         var res = (b1.getAttribute("value"));
 
+        return val;
     }
+    val.push(btn_1());
+    console.log(val);
+
     var btn1 = document.getElementById("btn_1");
     btn1.addEventListener("click", btn_1);
+
+
 
 
     function btn_2() {
         var b2= document.getElementById("I-1");
         b2.setAttribute("value", "2");
-
+        val = b2.getAttribute("value");
+        return val;
     }
     var btn2 = document.getElementById("btn_2");
     btn2.addEventListener("click", btn_2);
@@ -110,4 +118,4 @@
 
     }
 
-})();
+// })();
