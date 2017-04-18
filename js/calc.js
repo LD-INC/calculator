@@ -168,8 +168,8 @@ btn0.addEventListener("click", zero);
 
 
 function equals() {
-    var value1 = parseInt(res);
-    var value2 = parseInt(res2);
+    var value1 = parseFloat(res);
+    var value2 = parseFloat(res2);
     var answer;
 
 
@@ -202,7 +202,10 @@ function equals() {
 
 }
 var btnequal = document.getElementById("btn_eq");
-btnequal.addEventListener("click", equals);
+btnequal.addEventListener("click", function(){
+    equals();
+    rotateAnimation();
+});
 
 
 function divide() {
@@ -211,5 +214,20 @@ function divide() {
 }
 var btnDiv = document.getElementById("btn_/");
 btnDiv.addEventListener("click", divide);
+
+function rotateAnimation (){
+    btnequal.setAttribute("class", "animate")
+}
+
+    function decimal() {
+        if(operator){
+            i3.setAttribute("value", res2 += ".");
+        }else {
+            i1.setAttribute("value", res += ".");
+        }
+    }
+    var btnDec = document.getElementById("btn_dec");
+    btnDec.addEventListener("click", decimal);
+
 
 })();
