@@ -213,8 +213,12 @@
 
     }
     function rotateAnimation() {
-        btnequal.setAttribute("class", "animate")
+        btnequal.setAttribute("class", "animate");
+        setTimeout(function(){
+            btnequal.removeAttribute("class");
+        }, 3000);
     }
+
 
     var btnequal = document.getElementById("btn_eq");
     btnequal.addEventListener("click", function () {
@@ -251,9 +255,19 @@
 
     function negative() {
         if (operator) {
-            i3.setAttribute("value", res2 += ".");
+            if (res2 > 0){
+                res2 = "-"+res2;
+            }else{
+                res2 = res2 - (res2 * 2);
+            }
+            i3.setAttribute("value", res2);
         } else {
-            i1.setAttribute("value", res += ".");
+            if (res > 0){
+                res = "-"+res;
+            }else{
+                res = res - (res * 2);
+            }
+            i1.setAttribute("value", res);
         }
     }
     var btnNeg = document.getElementById("btn_neg");
@@ -268,6 +282,7 @@
         } else {
             res= res/100;
             i1.setAttribute("value", res);
+            res2= "";
         }
     }
 
@@ -277,10 +292,10 @@
     function squared() {
         if (operator) {
             res2 = Math.pow(res2, 2);
-            i3.setAttribute("value", res2 += ".");
+            i3.setAttribute("value", res2);
         } else {
             res = Math.pow(res, 2);
-            i1.setAttribute("value", res += ".");
+            i1.setAttribute("value", res);
         }
     }
 
