@@ -1,6 +1,6 @@
 div {
     float: left;
-    border: 1px solid red;
+
     padding-left: 100px;
     margin-left: 175px;
 }
@@ -10,7 +10,7 @@ div#buttons {
     height: 400px;
     width: 300px;
     float: left;
-    border: 1px solid blue;
+
 }
 
 button {
