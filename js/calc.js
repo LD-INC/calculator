@@ -201,7 +201,7 @@ function equals() {
 
 
 }
-var btnequal = document.getElementById("btn_=");
+var btnequal = document.getElementById("btn_eq");
 btnequal.addEventListener("click", equals);
 
 

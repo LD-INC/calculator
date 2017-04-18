@@ -1,3 +1,8 @@
+body {
+    background-image: url("stealMesh.png");
+
+}
+
 header {
     width: 100%;
     height: 100px;
@@ -14,6 +19,9 @@ input {
     height: 50px;
     margin: 45px 5% 0 5%;
     font-size: 40px;
+    background-color: rgba(64, 64, 64, 0.8);
+    color: #ccc;
+    border-color: #ccc;
 }
 
 #inputOperator {
@@ -34,15 +42,30 @@ main {
 #buttons {
     margin: 80px auto 0;
     height: 400px;
-    width: 295px;
-
-
-
+    width: 332px;
 }
 
 button {
     height: 70px;
     width: 70px;
-    margin: 0 auto;
-
+    margin: 5px 5px;
+    border-radius: 50%;
+    background-color: rgba(64, 64, 64, 0.5);
+    border-bottom: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    font-size: 50px;
+    color: #ccc
+}
+.operators {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#btn_C {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #444
+}
+#btn_eq {
+    background-image: url("gearz.png");
+    background-size: 65px 67px;
 }
