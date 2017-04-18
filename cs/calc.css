@@ -75,6 +75,9 @@ button:active {
     background-image: url("gearz.png");
     background-size: 65px 67px;
 }
+#btn_neg, #btn_percent, #btn_squared{
+    font-size: 40px;
+}
 .func {
     background-color: rgba(40, 40, 40, 0.6);
 }
